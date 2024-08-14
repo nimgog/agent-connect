@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <title>Jämför mäklare i hela Sverige!</title>
+  <meta charset="UTF-8">
+
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="default" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="IE=edge" name="X-UA-Compatible" />
+  <meta
+    content="Få hjälp med att hitta rätt mäklare snabbt, enkelt och helt gratis!"
+    name="description"
+  />
+  <meta property="og:site_name" content="Hitta din mäklare" />
+
+  <link rel="stylesheet" href="css/947-76ce112bd36111bfd705.css" media="all" />
+  <link href="" rel="canonical" />
+
+  <script type="text/javascript">
+    window.experiments = {};
+  </script>
+
+  <body class="start index new-quicksearch">
+    <header class="navigation">
+      <div class="main-navigation">
+        <div class="main-navigation__logo">
+          <a href="/"
+            ><img alt="AgentConnect start" src="images/agent-connect.png"
+          /></a>
+        </div>
+        <div class="main-navigation__quicksearch">
+          <div id="QuickSearch"></div>
+        </div>
+        <div class="main-navigation__secondary">
+          <nav>
+            <ul>
+              <li><a href="#howitworks">Så fungerar det</a></li>
+              <li>
+                <a
+                  style="height: auto"
+                  data-category="Registrations"
+                  data-label="Top right button"
+                  class="ui-button--primary--ghost ui-button--medium ui-button--rounded event"
+                  href="#findrealtor"
+                  >Börja här
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      <div class="sticky-cta-wrapper">
+        <div class="sticky">
+          <div class="bui__container">
+            <div class="bui__row">
+              <div class="bui__cell bui__col-0 bui__col-s-4">
+                <p>Kom igång med din försäljning!</p>
+              </div>
+              <div class="bui__cell bui__col-12 bui__col-s-8">
+                <div class="bui__row">
+                  <div class="bui__cell bui__col-8 bui__col-m-9">
+                    <p>Vi matchar dig med de bästa mäklarna</p>
+                  </div>
+                  <div class="bui__cell bui__col-4 bui__col-m-3">
+                    <a
+                      class="ui-button--primary ui-button--small ui-button--rounded event"
+                      data-category="Registrations"
+                      data-label="Sticky button top"
+                      data-action="click"
+                      href="#findrealtor"
+                      >Börja här</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page">
+      <div id="new-header-spacing"></div>
+      <div id="QuickSearchPortal"></div>
+
+      <svg
+        enable-background="new 0 0 0 0"
+        height="0"
+        style="
+          position: absolute;
+          display: inline-block;
+          width: 0px;
+          height: 0px;
+        "
+        version="1.1"
+        viewBox="0 0 0 0"
+        width="0"
+        x="0"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        y="0"
+      >
+        <defs>
+          <linearGradient id="fill--0-10">
+            <stop
+              offset="100%"
+              stop-color="transparent"
+              stop-opacity="0"
+            ></stop>
+          </linearGradient>
+          <linearGradient id="fill--1-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="10%" stop-color="#FDAC1B"></stop>
+            <stop offset="10%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--2-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="20%" stop-color="#FDAC1B"></stop>
+            <stop offset="20%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--3-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="30%" stop-color="#FDAC1B"></stop>
+            <stop offset="30%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--4-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="40%" stop-color="#FDAC1B"></stop>
+            <stop offset="40%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--5-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="50%" stop-color="#FDAC1B"></stop>
+            <stop offset="50%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--6-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="60%" stop-color="#FDAC1B"></stop>
+            <stop offset="60%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--7-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="70%" stop-color="#FDAC1B"></stop>
+            <stop offset="70%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--8-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="80%" stop-color="#FDAC1B"></stop>
+            <stop offset="80%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--9-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="90%" stop-color="#FDAC1B"></stop>
+            <stop offset="90%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+          <linearGradient id="fill--10-10">
+            <stop offset="0%" stop-color="#FDAC1B"></stop>
+            <stop offset="100%" stop-color="#FDAC1B"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+          </linearGradient>
+        </defs>
+        <symbol id="star-rating" viewBox="0 0 100 100">
+          <path
+            d="M45,73.4452941 L26.6082353,83.5570588 C21.4729412,86.3894118 18.0847059,83.9805882 19.0270588,78.21 L22.6005882,56.4141176 L7.58647059,41.1141176 C3.51,36.9423529 4.88647059,32.8552941 10.6729412,31.9711765 L31.1505882,28.8476471 L40.4735294,9.12176471 C42.9723529,3.81176471 47.0382353,3.83823529 49.5264706,9.12176471 L58.8441176,28.8688235 L79.3323529,31.9764706 C85.1135294,32.85 86.5005882,36.9370588 82.4029412,41.1088235 L67.4047059,56.4088235 L70.9729412,78.2047059 C71.9258824,83.9911765 68.5482353,86.4 63.3917647,83.5623529 L45,73.4505882 L45,73.4452941 Z"
+            style="stroke: stroke; stroke-width: 5"
+          ></path>
+        </symbol>
+      </svg>
+
+      <div class="hm_navbar" id="hm-navbar">
+        <nav role="navigation">
+          <div class="hm_navbar__menu hm_navbar__menu--height-auto">
+            <div class="bui__container">
+              <div class="bui__row pt-2 pb-2">
+                <div class="bui__cell bui__col-m-0 bui__col-l-2">
+                  <div class="hm_navbar__avatar">
+                    <div class="bui__cell bui__col-s-12 bui__col-m-0">
+                      <ul>
+                        <li
+                          class="header__menu-anchor header__menu-anchor--btn event"
+                          data-category="Registrations"
+                          data-label="Top right button"
+                          id="item"
+                        >
+                          <a href=""#findrealtor">Börja här</a>
+                        </li>
+                        <li
+                          class="mr-2 ui-button--primary--ghost ui-button--medium ui-button--adaptive-width event header__btn"
+                          data-category="Registrations"
+                          data-label="Top right button"
+                          id="item"
+                        >
+                          <a href="#findrealtor">Börja här</a>
+                        </li>
+                        <li class="header__menu-anchor" id="item">
+                          <a href="/maklare">Alla mäklare</a>
+                        </li>
+                        <li class="header__menu-anchor" id="item">
+                          <a href="/sa-fungerar-det">Så fungerar det</a>
+                        </li>
+                        <li class="header__menu-anchor" id="item">
+                          <a href="/for-maklare">För mäklare</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bui__cell bui__col-m-12 bui__col-l-10">
+                  <div class="hm_navbar__menu__sub"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="tw-layout">
+        <div
+          class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 border-bottom tw-mb-24 tw-pb-10 md:tw-pb-16 tw-px-4 md:tw-pt-0"
+        >
+          <div
+            class="tw-justify-self-end md:tw-col-auto tw-pt-8 md:tw-pt-[100px] md:tw-max-w-[596px]"
+          >
+            <h1 class="tw-text-5xl md:tw-text-6xl tw-leading-relaxed tw-mb-8">
+              Vill du sälja eller värdera din bostad?
+            </h1>
+            <ul class="checkItems">
+              <li>Matchar dig med rätt mäklare för just din försäljning</li>
+              <li>
+                Använder data och omdöme för att matcha dig med mäklare
+              </li>
+              <li>Kostnadsfritt och utan förbindelse</li>
+            </ul>
+          </div>
+          <div
+            class="tw-bg-bui-color-peanut tw-rounded-lg tw-justify-self-start md:tw-col-auto tw-mt-14 tw-px-4 md:tw-px-9 tw-py-8 md:tw-max-w-[596px]"
+          >
+            <h3 class="tw-text-center">
+              Vi hittar rätt mäklare för din försäljning.<br />Helt
+              <b>kostnadsfritt</b> och <b>utan förbindelse!</b>
+            </h3>
+            <section id="findrealtor">
+              <div class="tw-mt-7">
+                <form
+                  id="one-page-lead-form"
+                  class="tw-grid tw-grid-cols-2 tw-gap-4 tw-relative"
+                >
+                  <label class="streetAddress required">
+                    <span>Adress</span>
+                    <input
+                      type="text"
+                      name="streetAddress"
+                      placeholder="Fyll i din adress"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+              
+                  <!-- New Postcode Field -->
+                  <label class="postcode required">
+                    <span>Postkod</span>
+                    <input
+                      type="text"
+                      name="postcode"
+                      placeholder="Fyll i din postkod"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+              
+                  <label class="objectType">
+                    <span>Bostadstyp</span>
+                    <div class="select">
+                      <select name="objectType" required>
+                        <option value="" disabled="" selected="" hidden="">
+                          Välj
+                        </option>
+                        <option value="Apartment">Lägenhet</option>
+                        <option value="House">Villa</option>
+                        <option value="Summer house">Fritidshus</option>
+                        <option value="Townhouse">Radhus</option>
+                        <option value="Twin house">Parhus</option>
+                        <option value="Linked house">Kedjehus</option>
+                      </select>
+                    </div>
+                    <div class="error"></div>
+                  </label>
+              
+                  <label class="rooms">
+                    <span>Antal rum</span>
+                    <div class="select">
+                      <select name="rooms" required>
+                        <option value="" disabled="" selected="" hidden="">
+                          Välj
+                        </option>
+                        <option value="1">1 rum</option>
+                        <option value="1.5">1½ rum</option>
+                        <option value="2">2 rum</option>
+                        <option value="2.5">2½ rum</option>
+                        <option value="3">3 rum</option>
+                        <option value="3.5">3½ rum</option>
+                        <option value="4">4 rum</option>
+                        <option value="4.5">4½ rum</option>
+                        <option value="5">5 rum</option>
+                      </select>
+                    </div>
+                    <div class="error"></div>
+                  </label>
+              
+                  <label class="livingArea">
+                    <span>Boyta</span>
+                    <input
+                      type="number"
+                      name="livingArea"
+                      placeholder="Antal kvm"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+              
+                  <label class="name required">
+                    <span>Namn</span>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Fyll i ditt namn"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+              
+                  <label class="email required">
+                    <span>E-postadress</span>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Fyll i din e-postadress"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+              
+                  <div>
+                    <label class="cellphone required">
+                      <span>Telefonnummer</span>
+                      <input
+                        type="tel"
+                        name="cellphone"
+                        placeholder="Fyll i ditt telefonnummer"
+                        required
+                      />
+                      <div class="error"></div>
+                    </label>
+                    <div class="tw-mt-4 tw-text-sm">
+                      Genom att skicka in godkänner du
+                      <a target="blank" href="/p/allmanna-anvandarvillkor"
+                        >våra villkor</a
+                      >.
+                    </div>
+                  </div>
+              
+                  <label>
+                    <span>Övrigt</span>
+                    <textarea
+                      name="sellerComment"
+                      id=""
+                      cols="30"
+                      rows="2"
+                      placeholder="Övriga kommentarer"
+                    ></textarea>
+                  </label>
+              
+                  <div
+                    class="tw-col-span-2 tw-min-w-full md:tw-min-w-[320px] tw-mx-auto tw-mt-6"
+                  >
+                    <button
+                      type="submit"
+                      class="ui-button--primary ui-button--rounded"
+                    >
+                      <span>Matcha mig med rätt mäklare</span>
+                    </button>
+                  </div>
+              
+                  <div class="server-error error"></div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="tw-max-w-[1224px] tw-mx-auto tw-px-4">
+          <section id="howitworks">
+            <ul
+              class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-3 tw-gap-10 lg:tw-gap-40 steps tw-mb-20 lg:tw-mb-32"
+            >
+              <li data-step="1">
+                <h3>Fyll i formuläret</h3>
+                <p>
+                  Svara på några frågor om din bostad så att vi kan matcha dig
+                  med de tre bästa mäklarna för din bostad.
+                </p>
+              </li>
+              <li data-step="2">
+                <h3>Jämför mäklare</h3>
+                <p>
+                  Jämför dina mäklare. Matchningen utgår ifrån mäklarnas
+                  tidigare försäljningar och rekommendationer.
+                </p>
+              </li>
+              <li data-step="3">
+                <h3>Anlita din mäklare</h3>
+                <p>
+                  Sedan kan du välja den mäklare som passar dig bäst. Utan
+                  förbindelse och utan kostnad!
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <div
+            class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1fr,450px] tw-gap-y-0 lg:tw-gap-x-24 tw-mb-32"
+          >
+            <h2 class="tw-col-span-full">Vad är AgentConnect?</h2>
+            <section>
+              <p>
+                Mäklare är bra på olika saker och att hitta rätt när du ska
+                sälja kan kännas väldigt svårt och ta tid. Vi vill istället göra
+                det väldigt enkelt!
+              </p>
+              <p>
+                Vår tjänst använder du utan förbindelse, och vi har hjälpt
+                bostadssäljare i valet av mäklare.
+              </p>
+              <p>
+                Den dagen du ska sälja har vi massor med statistik för att på
+                ett väl underbyggt sätt kunna matcha dig med lokala mäklare som
+                passar just din försäljning. Vi vet vilka du borde träffa och vi
+                matchar dig med mäklarna som är bäst i ditt område.
+              </p>
+              <p class="tw-font-medium">
+                Väldigt enkelt och väldigt kostnadsfritt!
+              </p>
+            </section>
+            <div class="tw-text-center tw-mt-10 lg:tw-mt-0 lg:tw-self-center">
+              <img
+                class="tw-max-w-[450px]"
+                src="images/back_to_back-255a73d10303fbbeeb0c733e7ca65fae38a4adc31e95d576246590bd9b99fd22.svg"
+              />
+            </div>
+          </div>
+
+          <div
+            class="tw-rounded-lg tw-bg-bui-color-peanut tw-px-7 lg:tw-px-48 tw-py-8 lg:tw-py-20 tw-text-center tw-mb-20 lg:tw-mb-48"
+          >
+            <div class="tw-text-2xl lg:tw-text-4xl tw-font-medium tw-mb-4">
+              Visste du att...
+            </div>
+            <div class="tw-text-lg lg:tw-text-xl tw-mb-7 lg:tw-mb-10">
+              bostadspriserna i Sverige har ökat stadigt trots ekonomiska
+              utmaningar? Under det senaste året har det totala värdet av sålda
+              bostäder nått hela 445 miljarder kronor, och den genomsnittliga
+              storleken på en såld bostad är 68 kvadratmeter.
+              <a href="https://www.maklarstatistik.se/">Läs mer</a>
+            </div>
+          </div>
+
+          <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1fr_600px]">
+            <section>
+              <h2>Varför AgentConnect?</h2>
+              <ul class="arrow_points tw-pr-14">
+                <li>
+                  <h3>Rätt mäklare för din bostad</h3>
+                  <p>
+                    Mäklare är bra på olika saker och vi kan hitta de med rätt
+                    egenskaper för just din försäljning.
+                  </p>
+                </li>
+                <li>
+                  <h3>Kika på statistik</h3>
+                  <p>
+                    Det kan vara lönsamt att jämföra och kostsamt att låta bli.
+                    Vi samlar statistiken som gör det enklare för dig.
+                  </p>
+                </li>
+                <li>
+                  <h3>Hitta säljarnas favoriter</h3>
+                  <p>
+                    Vi har koll på vilka mäklare som ofta rekommenderas av andra
+                    bostadssäljare.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <div
+              class="tw-flex tw-flex-wrap tw-justify-center lg:tw-justify-end"
+            >
+              <div
+                class="tw-bg-bui-color-peanut tw-rounded-full tw-w-full tw-max-w-[600px] lg:tw-w-[600px] tw-h-auto lg:tw-h-[600px] tw-mt-3 lg:tw-mt-[-64px] tw-aspect-square tw-grid"
+              >
+                <div class="tw-self-center">
+                  <div
+                    class="tw-mx-20 lg:tw-mx-32 tw-text-xl md:tw-text-3xl tw-text-center"
+                  >
+                    Vi hittar rätt mäklare för din försäljning. <br />Helt
+                    <b>kostnadsfritt</b> och <b>utan förbindelse!</b>
+                  </div>
+                  <div class="tw-mx-auto tw-w-[140px] tw-mt-10">
+                    <a
+                      class="ui-button--primary ui-button--rounded event"
+                      data-category="Registrations"
+                      data-label="Start page button"
+                      data-campaign="New structure"
+                      href="#findrealtor"
+                      >Börja här</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <turbo-frame id="compare_agents"></turbo-frame>
+
+    <footer>
+      <div class="footer">
+        <div class="bui__container">
+          <div class="bui__row pt-7 pt-sm-8 pb-8 mt-0 mt-sm-8">
+            <div class="bui__cell bui__col-6 bui__col-s-4">
+              <div class="bui__row">
+                <div class="bui__cell">
+                  <img
+                    alt="AgentConnect logo"
+                    class="footer__hands"
+                    src="images/hand-with-keys-ed6e1cf39649a690517999fc510538522f34b89cfcdc950a616318177c8afdce.svg"
+                  />
+                </div>
+              </div>
+              <div class="bui__row logo_wrapper_small">
+                <div class="bui__cell">
+                  <img
+                    alt="AgentConnect logo"
+                    class="footer__logo"
+                    src="images/agent-connect.png"
+                  />
+                </div>
+                <div class="bui__cell pt-4">
+                  <div class="bui__row">
+                    <div class="bui__cell bui__col-s-10">
+                      <p class="pop">
+                        AgentConnect är en mäklarguide och jämförelsetjänst av
+                        mäklare
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bui__cell bui__col-6 bui__col-s-8">
+              <div class="bui__row">
+                <div
+                  class="bui__cell bui__col-s-6 bui__col-m-3 pt-3 pt-sm-3 pt-md-0"
+                >
+                  <div class="section_header">Kontakt</div>
+                  <ul>
+                    <li>
+                      <a href="mailto:info@hittamaklare.se"
+                        >info@agentconnect.se</a
+                      >
+                    </li>
+                    <li><a href="/om-oss">Om oss</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="bui__cell bui__col-s-6 bui__col-m-3 pt-3 pt-sm-3 pt-md-0"
+                >
+                  <div class="section_header">Integritet</div>
+                  <ul>
+                    <li><a href="/p/cookies">Cookies</a></li>
+                    <li>
+                      <button class="ot-sdk-show-settings" id="ot-sdk-btn">
+                        Hantera cookies
+                      </button>
+                    </li>
+                    <li>
+                      <a href="/p/integritetspolicy">Integritetspolicy</a>
+                    </li>
+                    <li>
+                      <a href="/p/allmanna-anvandarvillkor">Användarvillkor</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bui__row logo_wrapper_big mb-8">
+                <div class="bui__cell bui__col-s-6">
+                  <img
+                    alt="AgentConnect logo"
+                    class="footer__logo"
+                    src="images/agent-connect.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('one-page-lead-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const formData = new FormData(this);
+    
+        fetch('https://script.google.com/macros/s/AKfycbyxjlgMAfLpgzlgue8BB8-VOOtInxpClRuffsLhsv3mgqmmRpQbX1JR4uB9ucl-hvPxRw/exec', {
+          method: 'POST',
+          body: formData,
+        })
+        .then(response => response.text())
+        .then(result => {
+          if (result === 'Success') {
+            alert('Tack! Din förfrågan har skickats.');
+            this.reset();
+          } else {
+            document.querySelector('.server-error').innerText = 'Något gick fel, försök igen.';
+          }
+        })
+        .catch(error => {
+          document.querySelector('.server-error').innerText = 'Ett fel inträffade: ' + error.message;
+        });
+      });
+    </script>
+  </body>
+</html>
