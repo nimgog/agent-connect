@@ -10009,6 +10009,8 @@ body.index .tw-layout h3 {
 body.index .tw-layout .border-bottom {
   border-bottom: 1px solid #ccc;
 }
+
+
 body.index .tw-layout .checkItems li {
   position: relative;
   margin-bottom: 1.25rem;
@@ -10024,7 +10026,7 @@ body.index .tw-layout .checkItems li:before {
   position: absolute;
   left: 0px;
   top: 10px;
-  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEyIiBoZWlnaHQ9IjgzIiB2aWV3Qm94PSIwIDAgMTEyIDgzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTEyIDEzLjgxOTVMOTguODE0NSAwTDM5LjYzOCA1Ni40NjIxTDEzLjgxOTQgMjkuNDAyM0wwIDQyLjU4OEwzNi4yNTE5IDgwLjU4MjVMMzcuNjMxOCA3OS4yNjU4TDQwLjM4NDIgODIuMTUwNkwxMTIgMTMuODE5NVoiIGZpbGw9IiNGRjYyMEYiLz4KPC9zdmc+Cgo=)
+  background: url(icons/keys.svg)
     no-repeat;
   background-size: 18px 18px;
   background-position: 3px 3px;
