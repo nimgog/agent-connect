@@ -1541,9 +1541,9 @@ input:focus {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
-  color: #fff;
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+  color: white;
 }
 .ui-button--primary:hover {
   cursor: pointer;
@@ -4549,12 +4549,24 @@ svg {
     --header-height: 72px;
   }
 }
+
+header.navigation .main-navigation {
+  border-bottom: 1px solid #ff7f50;
+  background: #dfe4ea;
+}
 header.navigation .main-navigation ul li a,
 header.navigation .main-navigation__logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #270fcd;
 }
+
+.form-post {
+  background-color: #270fcd;
+  color: white;
+}
+
 header.navigation .main-navigation ul li a:hover,
 header.navigation .main-navigation__logo a:hover,
 header.navigation .main-navigation ul li a:focus,
@@ -5689,6 +5701,7 @@ ul.bullet-list li {
 }
 .page {
   overflow: hidden;
+  background: #f1f2f6;
 }
 .info_page p {
   margin-bottom: 16px;
@@ -9965,7 +9978,7 @@ body.needs_analysis body.needs_analysis .splash-section {
   }
 }
 body.index .tw-layout {
-  background-color: #fff;
+  background-color: #f1f2f6;
 }
 @media (min-width: 768px) {
   body.index .tw-layout p {
@@ -10010,7 +10023,6 @@ body.index .tw-layout .border-bottom {
   border-bottom: 1px solid #ccc;
 }
 
-
 body.index .tw-layout .checkItems li {
   position: relative;
   margin-bottom: 1.25rem;
@@ -10026,8 +10038,8 @@ body.index .tw-layout .checkItems li:before {
   position: absolute;
   left: 0px;
   top: 10px;
-  background: url(icons/keys.svg)
-    no-repeat;
+  background-image: url(../images/keys.svg);
+  background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: 3px 3px;
 }
@@ -10040,21 +10052,7 @@ body.index .tw-layout .steps li {
     padding-left: 66px;
   }
 }
-body.index .tw-layout .steps li::before {
-  content: attr(data-step);
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 0px;
-  top: 3px;
-  color: white;
-  background: #6c5ce7;
-  border-radius: 100%;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 38px;
-}
+
 @media (min-width: 576px) {
   body.index .tw-layout .steps li::before {
     width: 50px;
@@ -10657,6 +10655,22 @@ body.pages.design_guide .sample__code {
 .tw-group:hover .group-hover\:tw-underline {
   text-decoration-line: underline;
 }
+
+.process-list {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .process-list {
+    flex-direction: column;
+  }
+
+  .process-item {
+    padding: 1rem;
+    padding-left: unset !important;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:tw-left-1\/2 {
     left: 50%;

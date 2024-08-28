@@ -3,6 +3,11 @@
   <title>Jämför mäklare i hela Sverige!</title>
   <meta charset="UTF-8">
 
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your other head elements -->
+  </head>
+
   <meta content="text/javascript" http-equiv="Content-Script-Type" />
   <meta content="text/css" http-equiv="Content-Style-Type" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -19,16 +24,12 @@
   <link rel="stylesheet" href="css/947-76ce112bd36111bfd705.css" media="all" />
   <link href="" rel="canonical" />
 
-  <script type="text/javascript">
-    window.experiments = {};
-  </script>
-
   <body class="start index new-quicksearch">
     <header class="navigation">
       <div class="main-navigation">
         <div class="main-navigation__logo">
           <a href="/"
-            ><img alt="AgentConnect start" src="images/agent-connect.png"
+            ><img alt="AgentConnect start" src="images/maklarduellen-logo.png"
           /></a>
         </div>
         <div class="main-navigation__quicksearch">
@@ -61,10 +62,8 @@
               </div>
               <div class="bui__cell bui__col-12 bui__col-s-8">
                 <div class="bui__row">
-                  <div class="bui__cell bui__col-8 bui__col-m-9">
-                    <p>Vi matchar dig med de bästa mäklarna</p>
-                  </div>
-                  <div class="bui__cell bui__col-4 bui__col-m-3">
+
+                  <!-- <div class="bui__cell bui__col-4 bui__col-m-3">
                     <a
                       class="ui-button--primary ui-button--small ui-button--rounded event"
                       data-category="Registrations"
@@ -73,7 +72,7 @@
                       href="#findrealtor"
                       >Börja här</a
                     >
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -190,21 +189,21 @@
                   <div class="hm_navbar__avatar">
                     <div class="bui__cell bui__col-s-12 bui__col-m-0">
                       <ul>
-                        <li
+                        <!-- <li
                           class="header__menu-anchor header__menu-anchor--btn event"
                           data-category="Registrations"
                           data-label="Top right button"
                           id="item"
                         >
                           <a href=""#findrealtor">Börja här</a>
-                        </li>
+                        </li> -->
                         <li
                           class="mr-2 ui-button--primary--ghost ui-button--medium ui-button--adaptive-width event header__btn"
                           data-category="Registrations"
                           data-label="Top right button"
                           id="item"
                         >
-                          <a href="#findrealtor">Börja här</a>
+                          <!-- <a href="#findrealtor">Börja här</a> -->
                         </li>
                         <li class="header__menu-anchor" id="item">
                           <a href="/maklare">Alla mäklare</a>
@@ -238,7 +237,7 @@
             <h1 class="tw-text-5xl md:tw-text-6xl tw-leading-relaxed tw-mb-8">
               Redo för nästa kapitel? Låt den bästa mäklaren hjälpa dig
             </h1>
-            <p>Vår algoritm på MäklarDuellen är utformad tillsammans med erfarna mäklare som vet hur man optimerar slutpriser. Därför hittar vi alltid de mest effektiva lösningarna för en framgångsrik försäljning.</p>
+            <p class="tw-mb-8">Vår algoritm på MäklarDuellen är utformad tillsammans med erfarna mäklare som vet hur man optimerar slutpriser. Därför hittar vi alltid de mest effektiva lösningarna för en framgångsrik försäljning.</p>
             <ul class="checkItems">
               <li>Utforska</li>
               <li>
@@ -248,7 +247,7 @@
             </ul>
           </div>
           <div
-            class="tw-bg-bui-color-peanut tw-rounded-lg tw-justify-self-start md:tw-col-auto tw-mt-14 tw-px-4 md:tw-px-9 tw-py-8 md:tw-max-w-[596px]"
+            class="form-post tw-bg-bui-color-peanut tw-rounded-lg tw-justify-self-start md:tw-col-auto tw-mt-14 tw-px-4 md:tw-px-9 tw-py-8 md:tw-max-w-[596px]"
           >
             <h3 class="tw-text-center">
               Vi hittar rätt mäklare för din försäljning.<br />Helt
@@ -405,149 +404,35 @@
 
         <div class="tw-max-w-[1224px] tw-mx-auto tw-px-4">
           <section id="howitworks">
-            <ul
-              class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-3 tw-gap-10 lg:tw-gap-40 steps tw-mb-20 lg:tw-mb-32"
-            >
-              <li data-step="1">
+            <ul class="steps process-list tw-flex tw-flex-row tw-gap-10 lg:tw-gap-40 tw-mb-20 lg:tw-mb-32">
+              <li class="process-item tw-flex tw-flex-col tw-items-center tw-text-center">
+                <div class="tw-w-14">
+                  <img src="images/pen-paper.svg" alt="fyll i formulär" class="tw-mb-4" />
+                </div>
                 <h3>Fyll i formuläret</h3>
-                <p>
-                  Beskriv din bostad, fyll i formuläret med enkla uppgifter.
-                </p>
+                <p>Beskriv din bostad, fyll i formuläret med enkla uppgifter.</p>
               </li>
-              <li data-step="2">
+              <li class="process-item tw-flex tw-flex-col tw-items-center tw-text-center">
+                <div class="tw-w-14">
+                  <img src="images/thinking-svgrepo-com.svg" alt="Jämför mäklare" class="tw-mb-4" />
+                </div>
                 <h3>Jämför mäklare</h3>
                 <p>
                   Bli kontaktad av upp till tre mäklare, handplockade av vår algoritm för din bostad.
                 </p>
               </li>
-              <li data-step="3">
+              <li class="process-item tw-flex tw-flex-col tw-items-center tw-text-center">
+                <div class="tw-w-14">
+                  <img src="images/relaxed-silhouette-svgrepo-com.svg" alt="Luta dig tillbaka" class="tw-mb-4" />
+                </div>
                 <h3>Anlita din mäklare</h3>
-                <p>
-                  Välj den mäklare du har bäst kemi med, tillit är viktigt i en försäljning.
-                </p>
+                <p>Välj den mäklare du har bäst kemi med, tillit är viktigt i en försäljning. Luta dig sedan tillbaka.</p>
               </li>
             </ul>
           </section>
-
-          <!-- <div
-            class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[1fr,450px] tw-gap-y-0 lg:tw-gap-x-24 tw-mb-32"
-          >
-            <h2 class="tw-col-span-full">Vad är AgentConnect?</h2>
-            <section>
-              <p>
-                Mäklare är bra på olika saker och att hitta rätt när du ska
-                sälja kan kännas väldigt svårt och ta tid. Vi vill istället göra
-                det väldigt enkelt!
-              </p>
-              <p>
-                Vår tjänst använder du utan förbindelse, och vi har hjälpt
-                bostadssäljare i valet av mäklare.
-              </p>
-              <p>
-                Den dagen du ska sälja har vi massor med statistik för att på
-                ett väl underbyggt sätt kunna matcha dig med lokala mäklare som
-                passar just din försäljning. Vi vet vilka du borde träffa och vi
-                matchar dig med mäklarna som är bäst i ditt område.
-              </p>
-              <p class="tw-font-medium">
-                Väldigt enkelt och väldigt kostnadsfritt!
-              </p>
-            </section>
-            <div class="tw-text-center tw-mt-10 lg:tw-mt-0 lg:tw-self-center">
-              <img
-                class="tw-max-w-[450px]"
-                src="images/back_to_back-255a73d10303fbbeeb0c733e7ca65fae38a4adc31e95d576246590bd9b99fd22.svg"
-              />
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
-    <turbo-frame id="compare_agents"></turbo-frame>
-
-    <footer>
-      <div class="footer">
-        <div class="bui__container">
-          <div class="bui__row pt-7 pt-sm-8 pb-8 mt-0 mt-sm-8">
-            <div class="bui__cell bui__col-6 bui__col-s-4">
-              <div class="bui__row">
-                <div class="bui__cell">
-                  <img
-                    alt="AgentConnect logo"
-                    class="footer__hands"
-                    src="images/hand-with-keys-ed6e1cf39649a690517999fc510538522f34b89cfcdc950a616318177c8afdce.svg"
-                  />
-                </div>
-              </div>
-              <div class="bui__row logo_wrapper_small">
-                <div class="bui__cell">
-                  <img
-                    alt="AgentConnect logo"
-                    class="footer__logo"
-                    src="images/agent-connect.png"
-                  />
-                </div>
-                <div class="bui__cell pt-4">
-                  <div class="bui__row">
-                    <div class="bui__cell bui__col-s-10">
-                      <p class="pop">
-                        AgentConnect är en mäklarguide och jämförelsetjänst av
-                        mäklare
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bui__cell bui__col-6 bui__col-s-8">
-              <div class="bui__row">
-                <div
-                  class="bui__cell bui__col-s-6 bui__col-m-3 pt-3 pt-sm-3 pt-md-0"
-                >
-                  <div class="section_header">Kontakt</div>
-                  <ul>
-                    <li>
-                      <a href="mailto:info@hittamaklare.se"
-                        >info@agentconnect.se</a
-                      >
-                    </li>
-                    <li><a href="/om-oss">Om oss</a></li>
-                  </ul>
-                </div>
-                <div
-                  class="bui__cell bui__col-s-6 bui__col-m-3 pt-3 pt-sm-3 pt-md-0"
-                >
-                  <div class="section_header">Integritet</div>
-                  <ul>
-                    <li><a href="/p/cookies">Cookies</a></li>
-                    <li>
-                      <button class="ot-sdk-show-settings" id="ot-sdk-btn">
-                        Hantera cookies
-                      </button>
-                    </li>
-                    <li>
-                      <a href="/p/integritetspolicy">Integritetspolicy</a>
-                    </li>
-                    <li>
-                      <a href="/p/allmanna-anvandarvillkor">Användarvillkor</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="bui__row logo_wrapper_big mb-8">
-                <div class="bui__cell bui__col-s-6">
-                  <img
-                    alt="AgentConnect logo"
-                    class="footer__logo"
-                    src="images/agent-connect.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script>
       document.getElementById('one-page-lead-form').addEventListener('submit', function(event) {
         event.preventDefault();
