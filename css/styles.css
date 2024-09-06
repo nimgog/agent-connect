@@ -1,0 +1,160 @@
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image fallback styling */
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the fallback image covers the area */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.feature-item {
+    max-width: 600px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.learn-more {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Case Study Section */
+.case-study {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.accordion {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion .accordion-content {
+    display: none;
+    padding: 15px;
+}
+
+.accordion input[type="checkbox"]:checked ~ .accordion-content {
+    display: block;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .feature-item {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .accordion {
+        max-width: 800px;
+    }
+}

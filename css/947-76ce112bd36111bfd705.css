@@ -4679,7 +4679,7 @@ header.navigation .main-navigation__secondary {
   flex-grow: 1;
   flex-basis: 0;
   justify-content: flex-end;
-  display: none;
+  /* display: none; */
 }
 @media (min-width: 768px) {
   header.navigation .main-navigation__secondary {
@@ -4694,6 +4694,7 @@ header.navigation .main-navigation__secondary {
 header.navigation .main-navigation ul {
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 header.navigation .main-navigation ul li {
   padding: 0 16px;
