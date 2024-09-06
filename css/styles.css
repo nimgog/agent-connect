@@ -3,25 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
+    background-color: #f8f9fb;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Image fallback styling */
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the fallback image covers the area */
+/* Main Page Layout */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 /* Hero Section */
@@ -53,6 +51,7 @@ img {
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 /* Features Section */
@@ -156,5 +155,126 @@ img {
 
     .accordion {
         max-width: 800px;
+    }
+}
+
+/* Form Submission Page Styles */
+.form-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    background-color: #f8f9fb;
+    height: 100vh;
+}
+
+.form-container {
+    padding: 40px;
+    width: 45%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.checkbox-group label {
+    color: #666;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.image-container {
+    width: 50%;
+    position: relative;
+    background: url('image-placeholder.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+.testimonial p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.testimonial span {
+    display: block;
+    font-size: 12px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-page-container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .form-container,
+    .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        height: 250px;
+    }
+
+    .testimonial {
+        padding: 10px;
+        max-width: 100%;
     }
 }
