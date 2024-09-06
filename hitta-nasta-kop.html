@@ -13,7 +13,7 @@
     <header class="navigation">
         <div class="main-navigation">
           <div class="main-navigation__logo">
-            <a href="/"
+            <a href="index.html"
               ><img alt="AgentConnect start" src="images/maklarduellen-logo.png"
             /></a>
           </div>
@@ -33,12 +33,22 @@
                     >Tips & Tricks
                   </a>
                 </li>
+                <li>
+                    <a
+                    style="height: auto"
+                    data-category="Registrations"
+                    data-label="Top right button"
+                    class=""
+                    href="./index.html"
+                    >Hem
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
       </header>
 
-      <div class="container mt-6">
+      <!-- <div class="container mt-6">
         <div class="form-container">
             <h1>We'd love to help</h1>
             <p>We're a full-service agency with experts ready to help. We'll get in touch within 24 hours.</p>
@@ -63,6 +73,34 @@
                 <p>Untitled UI is the real deal. We've worked with a dozen agencies that simply don't deliver. Working with experienced and knowledgeable professionals at the helm is a breath of fresh air.</p>
                 <span>— Ellie Simpson</span>
                 <span>Head of Design, Sisyphus Labs</span>
+            </div>
+        </div>
+    </div> -->
+    <div class="form-page-container mt-8">
+        <div class="form-container">
+            <h1>Vi hjälper dig att hitta ditt drömhem</h1>
+            <p>Anmäl dig för att bli kontaktad av våra erfarna mäklare och hitta den perfekta lägenheten för dig.</p>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="text" name="first-name" placeholder="Förnamn" required>
+                    <input type="text" name="last-name" placeholder="Efternamn" required>
+                </div>
+                <input type="email" name="email" placeholder="din@epost.com" required>
+                <input type="tel" name="phone" placeholder="Telefonnummer" required>
+                <textarea name="message" placeholder="Lämna ett meddelande..." rows="4" required></textarea>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Du godkänner vår <a href="#">integritetspolicy</a>.</label>
+                </div>
+                <button type="submit" class="btn-primary">Anmäl dig</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="./images/lagenhets-kop.webp" alt="lägenhetsköp">
+            <div class="testimonial">
+                <p>”Vi fick fantastisk hjälp av dessa mäklare. De förstod exakt vad vi letade efter och guidade oss hela vägen!”</p>
+                <span>— Johan Andersson</span>
+                <span>Kund, Malmö</span>
             </div>
         </div>
     </div>
