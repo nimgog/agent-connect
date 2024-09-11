@@ -1,0 +1,33 @@
+.animated-section {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    gap: 20px; /* Add some space between rows */
+    background-color: #f0f0f0;
+    overflow: hidden; /* Hide overflow for infinite scroll effect */
+  }
+  
+  .animated-section .row {
+    display: flex;
+    gap: 10px; /* Space between squares */
+    animation: slide var(--slide-time) linear infinite;
+  }
+  
+  .animated-section .square {
+    flex: 0 0 auto; /* Prevent squares from shrinking */
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+  }
+  
+  /* Infinite scrolling effect */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

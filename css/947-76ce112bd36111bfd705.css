@@ -320,12 +320,29 @@ input:focus {
   .tw-container {
     max-width: 1280px;
   }
+  .text_nowrap--mobile {
+    white-space: nowrap;
+  }
 }
 @media (min-width: 1536px) {
   .tw-container {
     max-width: 1536px;
   }
+
 }
+
+@media (min-width:768px) {
+  .form_margin-left--desktop {
+    margin-left: 80px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .text_justify-start--mobile {
+    justify-self: end !important;
+  }
+}
+
 .btn-primary {
   all: unset;
   display: flex;
@@ -3173,15 +3190,13 @@ input:focus {
   color: #999;
 }
 @font-face {
-  font-family: "SBAB";
+  font-family: "maklarduellen";
   font-weight: 400;
   font-display: fallback;
-  src: url(../fonts/53de18b88386b04b71f7.woff2) format("woff2"),
-    url(../fonts/33e2ddd3bbf5408b39be.woff) format("woff"),
-    url(../fonts/ef336046b016412a1121.ttf) format("truetype");
+  src: url(../fonts/SUSE-VariableFont_wght.ttf) format("truetype");
 }
-@font-face {
-  font-family: "SBAB";
+/* @font-face {
+  font-family: "maklarduellen";
   font-weight: 400;
   font-style: italic;
   font-display: fallback;
@@ -3190,7 +3205,7 @@ input:focus {
     url(../fonts/4c52599d5a1f2c66a683.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SBAB";
+  font-family: "maklarduellen";
   font-weight: 500;
   font-display: fallback;
   src: url(../fonts/13344680523903504cca.woff2) format("woff2"),
@@ -3198,13 +3213,13 @@ input:focus {
     url(../fonts/d1b9bead735cee568467.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SBAB";
+  font-family: "maklarduellen";
   font-weight: 700;
   font-display: fallback;
   src: url(../fonts/569c240394fdc7ed8da1.woff2) format("woff2"),
     url(../fonts/54beb7de67b603b250d5.woff) format("woff"),
     url(../fonts/0bb8bc1db1a627040d3e.ttf) format("truetype");
-}
+} */
 .break-word {
   word-break: break-word;
 }
@@ -3212,7 +3227,7 @@ input:focus {
   color: #101010;
   font-size: 10px;
   line-height: 1.8em;
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   text-transform: uppercase;
 }
 .font-headline--small {
@@ -3256,7 +3271,7 @@ input:focus {
   }
 }
 .font-display {
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   font-weight: 500;
 }
 .font-headline--medium-regular-dynamic {
@@ -3383,7 +3398,7 @@ h1,
 }
 html,
 body {
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   color: #1a1a1a;
   font-weight: 400;
   font-size: 16px;
@@ -3394,7 +3409,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   color: #1a1a1a;
   font-weight: 400;
   font-size: 16px;
@@ -4551,19 +4566,19 @@ svg {
 }
 
 header.navigation .main-navigation {
-  border-bottom: 1px solid #ff7f50;
   background: #dfe4ea;
 }
+
 header.navigation .main-navigation ul li a,
 header.navigation .main-navigation__logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #270fcd;
+  color: #4b7bec;
 }
 
 .form-post {
-  background-color: #270fcd;
+  background-color: #4b7bec;
   color: white;
 }
 
@@ -4857,7 +4872,7 @@ header.navigation .sticky-cta-wrapper .sticky p {
   color: #101010;
   font-size: 10px;
   line-height: 1.8em;
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding-right: 24px;
@@ -7984,7 +7999,7 @@ ul.bullet-list li {
   outline: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
   background-color: #fafafa;
-  font-family: "SBAB", Arial, sans-serif;
+  font-family: "maklarduellen", Arial, sans-serif;
   font-weight: 700;
   border: 1px solid rgba(0, 0, 0, 0);
   text-decoration: none;
