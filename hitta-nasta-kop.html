@@ -51,20 +51,148 @@
         <div class="form-container">
             <h1>Vi hjälper dig att hitta ditt drömhem</h1>
             <p>Anmäl dig för att bli kontaktad av våra erfarna mäklare och hitta den perfekta lägenheten för dig.</p>
-            <form action="#" method="post">
-                <div class="input-group">
-                    <input type="text" name="first-name" placeholder="Förnamn" required>
-                    <input type="text" name="last-name" placeholder="Efternamn" required>
+              <form
+                id="one-page-lead-form"
+                class="tw-grid tw-grid-cols-2 tw-gap-4 tw-relative"
+              >
+                <label class="streetAddress ">
+                  <span>Adress</span>
+                  <input
+                    type="text"
+                    name="streetAddress"
+                    placeholder="Fyll i din adress"
+                    required
+                  />
+                  <div class="error"></div>
+                </label>
+            
+                <!-- New Postcode Field -->
+                <label class="postcode">
+                  <span>Postkod</span>
+                  <input
+                    type="text"
+                    name="postcode"
+                    placeholder="Fyll i din postkod"
+                    required
+                  />
+                  <div class="error"></div>
+                </label>
+            
+                <label class="objectType">
+                  <span>Bostadstyp</span>
+                  <div class="select">
+                    <select name="objectType" required>
+                      <option value="" disabled="" selected="" hidden="">
+                        Välj
+                      </option>
+                      <option value="Apartment">Lägenhet</option>
+                      <option value="House">Villa</option>
+                      <option value="Summer house">Fritidshus</option>
+                      <option value="Townhouse">Radhus</option>
+                      <option value="Twin house">Parhus</option>
+                      <option value="Linked house">Kedjehus</option>
+                    </select>
+                  </div>
+                  <div class="error"></div>
+                </label>
+            
+                <label class="rooms">
+                  <span>Antal rum</span>
+                  <div class="select">
+                    <select name="rooms" required>
+                      <option value="" disabled="" selected="" hidden="">
+                        Välj
+                      </option>
+                      <option value="1">1 rum</option>
+                      <option value="1.5">1½ rum</option>
+                      <option value="2">2 rum</option>
+                      <option value="2.5">2½ rum</option>
+                      <option value="3">3 rum</option>
+                      <option value="3.5">3½ rum</option>
+                      <option value="4">4 rum</option>
+                      <option value="4.5">4½ rum</option>
+                      <option value="5">5 rum</option>
+                    </select>
+                  </div>
+                  <div class="error"></div>
+                </label>
+            
+                <label class="livingArea">
+                  <span>Boyta</span>
+                  <input
+                    type="number"
+                    name="livingArea"
+                    placeholder="Antal kvm"
+                    required
+                  />
+                  <div class="error"></div>
+                </label>
+            
+                <label class="name">
+                  <span>Namn</span>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Fyll i ditt namn"
+                    required
+                  />
+                  <div class="error"></div>
+                </label>
+            
+                <label class="email">
+                  <span>E-postadress</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Fyll i din e-postadress"
+                    required
+                  />
+                  <div class="error"></div>
+                </label>
+            
+                <div>
+                  <label class="cellphone">
+                    <span>Telefonnummer</span>
+                    <input
+                      type="tel"
+                      name="cellphone"
+                      placeholder="Fyll i ditt telefonnummer"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <div class="tw-mt-4 tw-text-sm">
+                    Genom att skicka in godkänner du
+                    <a target="blank" href="/p/allmanna-anvandarvillkor"
+                      >våra villkor</a
+                    >.
+                  </div>
                 </div>
-                <input type="email" name="email" placeholder="din@epost.com" required>
-                <input type="tel" name="phone" placeholder="Telefonnummer" required>
-                <textarea name="message" placeholder="Lämna ett meddelande..." rows="4" required></textarea>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="privacy" name="privacy" required>
-                    <label for="privacy">Du godkänner vår <a href="#">integritetspolicy</a>.</label>
+            
+                <label>
+                  <span>Övrigt</span>
+                  <textarea
+                    name="sellerComment"
+                    id=""
+                    cols="30"
+                    rows="2"
+                    placeholder="Övriga kommentarer"
+                  ></textarea>
+                </label>
+            
+                <div
+                  class="tw-col-span-2 tw-min-w-full md:tw-min-w-[320px] tw-mx-auto tw-mt-6"
+                >
+                  <button
+                    type="submit"
+                    class="ui-button--primary ui-button--rounded"
+                  >
+                    <span>Matcha mig med rätt mäklare</span>
+                  </button>
                 </div>
-                <button type="submit" class="btn-primary">Anmäl dig</button>
-            </form>
+            
+                <div class="server-error error"></div>
+              </form>
         </div>
         <div class="image-container">
             <img src="./images/lagenhets-kop.webp" alt="lägenhetsköp">
