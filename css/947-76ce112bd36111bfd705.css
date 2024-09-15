@@ -3195,34 +3195,19 @@ input:focus {
   font-display: fallback;
   src: url(../fonts/SUSE-VariableFont_wght.ttf) format("truetype");
 }
-/* @font-face {
-  font-family: "maklarduellen";
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
-  src: url(../fonts/10347c4f81e1330122bd.woff2) format("woff2"),
-    url(../fonts/549e019bd566f5927bfb.woff) format("woff"),
-    url(../fonts/4c52599d5a1f2c66a683.ttf) format("truetype");
+
+form > label > input {
+  color: black;
 }
-@font-face {
-  font-family: "maklarduellen";
-  font-weight: 500;
-  font-display: fallback;
-  src: url(../fonts/13344680523903504cca.woff2) format("woff2"),
-    url(../fonts/be751bed601b5eee6084.woff) format("woff"),
-    url(../fonts/d1b9bead735cee568467.ttf) format("truetype");
-}
-@font-face {
-  font-family: "maklarduellen";
-  font-weight: 700;
-  font-display: fallback;
-  src: url(../fonts/569c240394fdc7ed8da1.woff2) format("woff2"),
-    url(../fonts/54beb7de67b603b250d5.woff) format("woff"),
-    url(../fonts/0bb8bc1db1a627040d3e.ttf) format("truetype");
-} */
+
 .break-word {
   word-break: break-word;
 }
+
+.carrot-orange {
+  filter: invert(50%) sepia(93%) saturate(640%) hue-rotate(348deg) brightness(95%) contrast(89%);
+}
+
 .font-headline--tiny {
   color: #101010;
   font-size: 10px;
