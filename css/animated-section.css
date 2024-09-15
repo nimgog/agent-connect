@@ -1,33 +1,67 @@
-.animated-section {
-    display: flex;
-    flex-direction: column; /* Stack rows vertically */
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    gap: 20px; /* Add some space between rows */
-    background-color: #f0f0f0;
-    overflow: hidden; /* Hide overflow for infinite scroll effect */
+/* Container for the entire animation */
+.logo-carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* display: grid;
+  gap: max(1vw, 0.625rem); */
+  padding: 2rem 0;
+}
+
+/* Each row container */
+.logo-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  /* overflow: hidden; */
+  animation: side-slide var(--slide-time) linear infinite;
+  margin-bottom:10px;
+}
+
+/* Individual logo card */
+.logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  margin: 0 10px;
+  /* animation: slide-in var(--slide-time) linear infinite;
+  animation-delay: var(--anim-delay); */
+}
+
+
+/* Logo images */
+.logo-image {
+  max-width: 200px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Keyframes for sliding animation */
+@keyframes side-slide {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .animated-section .row {
-    display: flex;
-    gap: 10px; /* Space between squares */
-    animation: slide var(--slide-time) linear infinite;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .animated-section .square {
-    flex: 0 0 auto; /* Prevent squares from shrinking */
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
+}
+
+/* Keyframes for staggered animation */
+@keyframes slide-in {
+  0% {
+    transform: translateX(0);
   }
-  
-  /* Infinite scrolling effect */
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
   }
+}
+
+/* Media queries for responsive behavior */
+@media (min-width: 768px) {
+  .logo-card {
+    padding: 2rem;
+  }
+}
