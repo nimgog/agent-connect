@@ -3204,6 +3204,10 @@ form > label > input {
   word-break: break-word;
 }
 
+.baby-blue-background {
+  background: rgb(52 152 219 / 20%);
+}
+
 .carrot-orange {
   filter: invert(50%) sepia(93%) saturate(640%) hue-rotate(348deg) brightness(95%) contrast(89%);
 }
